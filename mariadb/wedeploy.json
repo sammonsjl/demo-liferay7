@@ -1,0 +1,12 @@
+{
+	"id": "mariadb",
+	"volume": "/var/lib/mysql",
+	"env": {
+		"MYSQL_ROOT_PASSWORD": "liferay",
+		"MYSQL_DATABASE": "lportal",
+		"character-set-server": "utf8mb4",
+		"collation-server": "utf8mb4_unicode_ci"
+	},
+	"memory": 4096,
+    "cpu": 3
+}

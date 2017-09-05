@@ -1,0 +1,6 @@
+{
+    "id": "liferay",
+    "volume": "/opt/liferay/shared",
+    "memory": 4096,
+    "cpu": 3
+}
