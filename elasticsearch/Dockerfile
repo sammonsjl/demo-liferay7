@@ -4,7 +4,7 @@ RUN /usr/share/elasticsearch/bin/plugin install --batch analysis-icu \
     && /usr/share/elasticsearch/bin/plugin install --batch analysis-kuromoji \
     && /usr/share/elasticsearch/bin/plugin install --batch analysis-smartcn \
     && /usr/share/elasticsearch/bin/plugin install --batch analysis-stempel \
-    && mkdir -p /mnt/shared/elasticsearch \
-    && chown -R elasticsearch:elasticsearch /mnt/shared/elasticsearch
+    && mkdir -p /wedeploy-data/elasticsearch \
+    && chown -R elasticsearch:elasticsearch /wedeploy-data/elasticsearch
 
 ADD elasticsearch.yml /usr/share/elasticsearch/config/

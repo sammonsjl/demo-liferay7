@@ -1,6 +1,6 @@
 {
 	"id": "mariadb",
-	"volume": "/var/lib/mysql",
+	"volume": "/wedeploy-data",
 	"env": {
 		"MYSQL_ROOT_PASSWORD": "liferay",
 		"MYSQL_DATABASE": "lportal",

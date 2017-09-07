@@ -1,4 +1,4 @@
 [mysqld]
-datadir                        = /var/lib/mysql/mariadb
+datadir                        = /wedeploy-data/mysql
 innodb_file_per_table          = 0
 innodb_use_native_aio          = 0

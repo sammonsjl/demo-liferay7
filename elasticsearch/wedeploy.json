@@ -1,9 +1,9 @@
 {
 	"id": "elasticsearch",
-	"volume": "/usr/share/elasticsearch/data",
 	"env": {
 		"ES_JAVA_OPTS": "-Xms4g -Xmx4g"
 	},
+	"volume": "/wedeploy-data",
 	"memory": 4096,
     "cpu": 3
 }

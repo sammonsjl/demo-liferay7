@@ -1,6 +1,6 @@
 {
     "id": "liferay",
-    "volume": "/opt/liferay/shared",
+    "volume": "/wedeploy-data",
     "memory": 4096,
     "cpu": 3
 }

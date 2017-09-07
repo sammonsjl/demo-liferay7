@@ -1,0 +1,5 @@
+{
+    "id": "cloudcommander",
+    "image": "coderaiser/cloudcmd",
+	"volume": "/wedeploy-data"
+}
