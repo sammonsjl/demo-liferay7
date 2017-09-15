@@ -1,7 +1,10 @@
 {
     "id": "liferay",
-    "image": "sammonsjl/liferay7:beta",
-    "volume": "/var/opt",
+    "image": "sammonsjl/liferay7",
+    "volume": "/storage",
+    "env": {
+        "LIFERAY_MYSQL_ROOT_PASSWORD": "mysecretpassword"
+    },
     "memory": 4096,
     "scale": 1,
     "cpu": 2

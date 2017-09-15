@@ -1,9 +1,9 @@
 {
 	"id": "mariadb",
 	"image": "sammonsjl/mariadb",
-	"volume": "/wedeploy-data",
+	"volume": "/storage",
 	"env": {
-		"MYSQL_ROOT_PASSWORD": "liferay",
+		"MYSQL_ROOT_PASSWORD": "mysecretpassword",
 		"MYSQL_DATABASE": "lportal",
 		"character-set-server": "utf8mb4",
 		"collation-server": "utf8mb4_unicode_ci"
