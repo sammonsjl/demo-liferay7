@@ -2,9 +2,6 @@
     "id": "liferay",
     "image": "sammonsjl/liferay:ce-ga4-v1.0.0",
     "volume": "/storage",
-    "env": {
-        "LIFERAY_MYSQL_ROOT_PASSWORD": "mysecretpassword"
-    },
     "memory": 4096,
     "scale": 1,
     "cpu": 2
