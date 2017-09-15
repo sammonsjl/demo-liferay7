@@ -1,6 +1,6 @@
 {
 	"id": "elasticsearch",
-	"image": "sammonsjl/elasticsearch",
+	"image": "sammonsjl/elasticsearch:v1.0.0",
 	"volume": "/storage",
 	"env": {
 		"ES_JAVA_OPTS": "-Xms4g -Xmx4g"
