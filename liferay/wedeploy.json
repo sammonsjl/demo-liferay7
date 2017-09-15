@@ -1,6 +1,8 @@
 {
     "id": "liferay",
-    "volume": "/wedeploy-data",
+    "image": "sammonsjl/liferay7:beta",
+    "volume": "/var/opt",
     "memory": 4096,
-    "cpu": 3
+    "scale": 1,
+    "cpu": 2
 }

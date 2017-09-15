@@ -1,9 +1,10 @@
 {
 	"id": "elasticsearch",
+	"image": "sammonsjl/elasticsearch",
 	"env": {
 		"ES_JAVA_OPTS": "-Xms4g -Xmx4g"
 	},
 	"volume": "/wedeploy-data",
-	"memory": 4096,
-    "cpu": 3
+	"memory": 2048,
+    "cpu": 1
 }

@@ -1,5 +1,6 @@
 {
 	"id": "mariadb",
+	"image": "sammonsjl/mariadb",
 	"volume": "/wedeploy-data",
 	"env": {
 		"MYSQL_ROOT_PASSWORD": "liferay",
@@ -7,6 +8,6 @@
 		"character-set-server": "utf8mb4",
 		"collation-server": "utf8mb4_unicode_ci"
 	},
-	"memory": 4096,
-    "cpu": 3
+	"memory": 1024,
+    "cpu": 1
 }
