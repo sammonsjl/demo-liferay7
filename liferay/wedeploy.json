@@ -1,6 +1,6 @@
 {
     "id": "liferay",
-    "image": "sammonsjl/liferay:ce-ga4-v1.0.0",
+    "image": "sammonsjl/liferay:ce-ga4-v1.0.5",
     "volume": "/usr/local/liferay-ce-portal-7.0-ga4/data",
     "memory": 4096,
     "scale": 1,
