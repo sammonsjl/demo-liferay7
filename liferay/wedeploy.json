@@ -1,6 +1,6 @@
 {
     "id": "liferay",
-    "image": "sammonsjl/liferay:ce-ga4-v1.0.1",
+    "image": "sammonsjl/liferay:ce-ga4-v1.0.2",
     "volume": "/storage",
     "env": {
         "LIFERAY_MYSQL_ROOT_PASSWORD": "mysecretpassword"
