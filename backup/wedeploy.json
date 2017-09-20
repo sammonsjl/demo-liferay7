@@ -1,0 +1,9 @@
+{
+	"id": "backup",
+	"volume": "/storage",
+	"env": {
+		"CRON": "0 0 2 * * *"
+	},
+	"memory": 1024,
+    "cpu": 2
+}

@@ -16,6 +16,8 @@ services:
     build: mariadb
     volumes:
       - storage-volume:/storage
+    ports:
+     - "3307:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=mysecretpassword
       - MYSQL_DATABASE=lportal
@@ -30,5 +32,19 @@ services:
         - "9300:9300"
       environment:
         - "ES_JAVA_OPTS=-Xms4096m -Xmx4096m"
+  backup:
+    build: backup
+    volumes:
+      - storage-volume:/storage
+    depends_on:
+     - mariadb
+     - elasticsearch
+     - portal
+  cloudcommander:
+    ports:
+      - 8000:8000
+    volumes:
+      - storage-volume:/storage
+    image: coderaiser/cloudcmd
 volumes:
   storage-volume:
