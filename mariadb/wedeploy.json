@@ -1,6 +1,5 @@
 {
 	"id": "mariadb",
-	"image": "sammonsjl/mariadb:v1.0.0",
 	"volume": "/storage",
 	"env": {
 		"MYSQL_ROOT_PASSWORD": "mysecretpassword",

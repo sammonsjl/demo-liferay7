@@ -1,0 +1,1 @@
+FROM sammonsjl/liferay-portal:ce-ga4-v1.0.0

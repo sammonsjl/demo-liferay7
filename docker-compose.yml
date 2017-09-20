@@ -1,0 +1,34 @@
+version: '2'
+services:
+  portal:
+    build: liferay
+    environment:
+      - LIFERAY_MYSQL_ROOT_PASSWORD=mysecretpassword
+      - LIFERAY_WEB_SERVER_PROTOCOL=http
+    volumes:
+      - storage-volume:/storage
+    ports:
+     - "8080:8080"
+    depends_on:
+     - mariadb
+     - elasticsearch
+  mariadb:
+    build: mariadb
+    volumes:
+      - storage-volume:/storage
+    environment:
+      - MYSQL_ROOT_PASSWORD=mysecretpassword
+      - MYSQL_DATABASE=lportal
+      - character-set-server=utf8mb4
+      - collation-server=utf8mb4_unicode_ci
+  elasticsearch:
+      build: elasticsearch
+      volumes:
+      - storage-volume:/storage
+      ports:
+        - "9200:9200"
+        - "9300:9300"
+      environment:
+        - "ES_JAVA_OPTS=-Xms4096m -Xmx4096m"
+volumes:
+  storage-volume:
