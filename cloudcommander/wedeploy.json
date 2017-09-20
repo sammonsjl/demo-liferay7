@@ -1,5 +1,5 @@
 {
     "id": "cloudcommander",
     "image": "coderaiser/cloudcmd",
-    "volume": "/mnt/shared"
+    "volume": "/storage"
 }
