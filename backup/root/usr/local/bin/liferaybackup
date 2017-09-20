@@ -1,0 +1,17 @@
+#!/bin/bash
+
+TIME=`date +"%d-%m-%Y"`
+FILENAME=liferay-documentlibrary-$TIME.tar.gz
+SRC=document_library
+DEST=/storage/backups/liferay
+
+cd /storage/liferay
+
+echo 'Backing up Document Library files to:' $DEST/$FILENAME
+tar -cpzf $DEST/$FILENAME $SRC
+
+if [[ -f "/storage/backups/liferay/latest.tar.gz" ]]; then
+    rm -f /storage/backups/liferay/latest.tar.gz
+fi
+
+ln -s /storage/backups/liferay/$FILENAME /storage/backups/liferay/latest.tar.gz
