@@ -2,7 +2,7 @@
 	"id": "mariadb",
 	"volume": "/storage",
 	"env": {
-		"MYSQL_ROOT_PASSWORD": "mysecretpassword",
+		"MYSQL_ROOT_PASSWORD": "liferay",
 		"MYSQL_DATABASE": "lportal",
 		"character-set-server": "utf8mb4",
 		"collation-server": "utf8mb4_unicode_ci"
