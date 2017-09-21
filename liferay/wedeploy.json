@@ -1,9 +1,6 @@
 {
     "id": "liferay",
     "volume": "/storage",
-    "env": {
-        "LIFERAY_MYSQL_ROOT_PASSWORD": "mysecretpassword"
-    },
     "memory": 4096,
     "scale": 1,
     "cpu": 2

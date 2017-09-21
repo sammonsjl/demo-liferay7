@@ -3,7 +3,6 @@ services:
   portal:
     build: liferay
     environment:
-      - LIFERAY_MYSQL_ROOT_PASSWORD=mysecretpassword
       - LIFERAY_WEB_SERVER_PROTOCOL=http
     volumes:
       - storage-volume:/storage
