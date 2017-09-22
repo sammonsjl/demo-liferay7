@@ -1,0 +1,6 @@
+{
+    "id": "sync",
+    "image": "syncthing/syncthing:latest",
+    "volume": "/var/syncthing",
+    "port": 8384
+}

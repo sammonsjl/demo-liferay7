@@ -45,5 +45,11 @@ services:
     volumes:
       - storage-volume:/storage
     image: coderaiser/cloudcmd
+  sync:
+    ports:
+      - 8384:8384
+    volumes:
+      - storage-volume:/storage
+    image: syncthing/syncthing:latest
 volumes:
   storage-volume:
